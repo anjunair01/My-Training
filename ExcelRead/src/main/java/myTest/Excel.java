@@ -17,6 +17,7 @@ public class Excel {
 	public static String readStringData(int i,int j) throws IOException {
 		f= new FileInputStream("C:\\Users\\Anish\\eclipse-workspace\\ExcelRead\\src\\main\\resources\\Student.xlsx");
 		w= new XSSFWorkbook(f);
+		
 		s= w.getSheet("Sheet1");
 		Row r=s.getRow(i);
 		Cell c=r.getCell(j);
